@@ -8,7 +8,14 @@ import org.springframework.web.bind.annotation.RestController;
 public class HelloWorld {
 
     @GetMapping("/hello")
-    public String Hello(){
+    public String Hello()
+    {
         return "Hello Lukas!";
+    }
+
+    @GetMapping("/")
+    public String root()
+    {
+        return "Openshift deployment is working !!";
     }
 }
